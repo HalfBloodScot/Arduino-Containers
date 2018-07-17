@@ -9,6 +9,8 @@ protected:
     BST* right;
 public:
     bool contains(const T& obj) const;
+    const T& get(const T& obj) const;
+    T& set(const T& obj);
 };
 
 #endif //BST_H_INCLUDED
