@@ -12,3 +12,20 @@ bool BST::contains(const T& obj) {
     }
     return false; 
 }
+
+const T& BST::get(const T& obj) const {
+    try {
+        if (value == obj) {
+            return obj; 
+        }
+        if (left && value > obj) {
+            return  left->(get(obj));
+        }
+        if (right && value < obj) {
+            return right->get(obj)); 
+        }   
+    } 
+    catch (...) {
+        throw "Null reference exception: Search tree does not contain specified value.\n";
+    }
+}
