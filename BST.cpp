@@ -14,6 +14,10 @@ bool BST::contains(const T& obj) {
 }
 
 const T& BST::get(const T& obj) const {
+    return set(obj);
+}
+
+T& BST::set(const T& obj) {
     try {
         if (value == obj) {
             return obj; 
