@@ -15,6 +15,10 @@ The equivalent of `std::vector` in the C++ std library.
   - Allocates data in a contiguous chunk in heap memory.
   - Doubles in size when the capacity is reached.
   - Able to shrink the capacity to fit the current size.
+  - `O(n)` search time.
 
-### BST (Binary Search Tree)
-The equivalent of 
+### BST (Binary Search Tree) ###
+The equivalent of `std::vector` with an `O(log(n))` search time.
+ - Allocates data in nodes connected in a binary search tree model on the heap.
+ - Non-contiguous allocation.
+ - `O(log(n))` search/fetch time.
